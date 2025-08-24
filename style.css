@@ -17,6 +17,7 @@ body{
 }
 
 a{
+
     color:var(--mainColor-color);
     text-decoration: none;
 }
@@ -49,9 +50,23 @@ li{
 .search-box{
     border: 2px solid var(--mainColor-color);
 }
-.fa-magnifying-glass{
+
+.search-icon-tag{
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
     border: 2px solid var(--mainColor-color);
-    width: 4em;
-    height: 1.63rem;
+    border-radius: 1px;
+    margin-left: -40px;
+
+
+}
+.fa-solid{
+
+    /* border: 2px solid var(--mainColor-color); */
+    
 }
 
