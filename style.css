@@ -47,9 +47,6 @@ li{
     list-style-type: none;
 }
 
-.search-box{
-    border: 2px solid var(--mainColor-color);
-}
 
 .search-icon-tag{
     display: inline-block;
@@ -58,15 +55,17 @@ li{
     text-align: center;
     line-height: 40px;
     cursor: pointer;
-    border: 2px solid var(--mainColor-color);
-    border-radius: 1px;
-    margin-left: -40px;
+    
 
 
 }
 .fa-solid{
 
     /* border: 2px solid var(--mainColor-color); */
+    
+}
+
+.search-input{
     
 }
 
