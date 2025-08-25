@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newtons-craddle</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 50rem;
+            background-color: rgb(1, 1, 52);
+            display: flex;
+            justify-content: center;
+            position: relative;
+            
+
+        }
+
+        .craddle{
+            width: 25rem;
+            height: 1rem;
+            background-color: aqua;
+            border-radius: 1rem;
+            margin-top: 6rem;
+            display: flex;
+            flex-direction:row ;
+            justify-content: center;
+            
+        }
+
+        div{
+            width: 0.5rem;
+            height: 15rem;
+            background-color: aqua;
+            gap: 3rem;
+            position: relative;
+
+        }
+
+        .craddle div::after{
+            content: "";
+            position: absolute;
+            width: 3.46rem;
+            aspect-ratio: 1;
+            border-radius:50% ;
+            background-color: aqua;
+            top: 90%;
+            left: -1.47rem;
+            
+        }
+
+        .craddle div:first-child{
+            animation: left-swing 2s linear infinite ;
+            transform-origin: top left;
+        }
+
+        @keyframes left-swing{
+            0%{
+                rotate: 0deg;
+            }
+            25%{
+                rotate: 30deg;
+
+            }
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate:0deg ;
+            }
+            
+        }
+
+        .craddle div:last-child{
+            animation: right-swing 2s linear 1s infinite ;
+            transform-origin: top right;
+        }
+
+        @keyframes right-swing {
+            0%{
+                rotate: 0deg;
+
+            }
+            25%{
+                rotate: -30deg;
+            }
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            color: aqua;
+            font-family: "jost";
+            position: absolute;
+            
+
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Newton's Craddle</h1>
+    <div class="craddle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
