@@ -62,6 +62,7 @@ li{
 .fa-solid{
 
     /* border: 2px solid var(--mainColor-color); */
+    margin-right: 1rem;
     
 }
 
@@ -81,6 +82,10 @@ li{
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+}
+.search-box{
+    /* justify-content: start; */
+    width: 23rem;
 }
 
 
