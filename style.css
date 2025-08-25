@@ -68,11 +68,20 @@ li{
 .search-input{
     display:flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    width: 1.63rem
-    aspect-ratio:1;
-    border:2px solid green;
-    
+    width: 13rem;
+    height: 1.7rem;
+    border: 2px solid green;
+    border-radius: 2px;
 }
+
+.home-buttons ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
 
