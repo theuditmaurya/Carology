@@ -109,27 +109,18 @@ li{
     gap: 1.3rem;
     /* margin-left: 10rem; */
     font-size: larger;
-    position: relative;
     
 
     &li a{
         display: inline-block;
         position: relative;
-
     }
-
-    &li a::after{
-        
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            border: o.2rem solid var(--mainColor-color);
-    }
-    }
-    
     
 }
+    
+    
+    
+
 
 
 .nav-container{
@@ -141,16 +132,16 @@ li{
 }
 
 .home-buttons ul li a::after{
-            content: "udit maurya";
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
+            border: 3px solid green;
 }
 
 /*? navbar ends here */
 
 
 /* ?main section starts */
-
 
 
