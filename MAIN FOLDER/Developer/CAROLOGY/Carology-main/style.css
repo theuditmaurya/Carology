@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing:border-box ;
-    font-family: "Saira", sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
   
   
 }
+
+html{
+    font-size: 63.5%;
+}
  :root{
     --mainColor-color:#0db907;
+    --background-color:#0f0f0f;
+
  }
 
 body{
-    background-color: #000000;
+    background-color:var(--background-color);
     color:var(--mainColor-color);
 }
+
+/* ?navbar starts */
 
 a{
 
@@ -31,14 +41,15 @@ a{
 }
 
 .logo{
-        width: 8rem;
-        
+        width: 12rem;
+        height: auto;
         margin:0.7rem 0 0 0.5rem;
         
 }
 
 .user-png{
     width: 1.5rem;
+    margin-right: 1rem;
 
     
 }
@@ -64,13 +75,16 @@ li{
 
     /* border: 2px solid var(--mainColor-color); */
     /* right: 0px; */
-    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
     
 }
 
 .search-box{
     /* justify-content: start; */
     width: 23rem;
+    height: 1.7rem;
+    border-right: 2px solid #0db907;
 }
 
 .search-input{
@@ -78,16 +92,65 @@ li{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    width: 13rem;
-    height: 1.7rem;
-    border: 2px solid green;
-    border-radius: 2px;
+    height:2rem;
+    border: 2px solid #0db907;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
-.home-buttons ul li{
+.home-buttons ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    gap: 1.3rem;
+    /* margin-left: 10rem; */
+    font-size: larger;
+    position: relative;
+    
+
+    &li a{
+        display: inline-block;
+        position: relative;
+
+    }
+
+    &li a::after{
+        
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: o.2rem solid var(--mainColor-color);
+    }
+    }
+    
+    
 }
+
+
+.nav-container{
+    padding: 1.5rem;
+}
+
+.home-buttons ul li :not(:first-child){
+    margin-left: 2rem;
+}
+
+.home-buttons ul li a::after{
+            content: "udit maurya";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+}
+
+/*? navbar ends here */
+
+
+/* ?main section starts */
+
+
 
