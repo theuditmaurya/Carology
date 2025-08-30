@@ -9,11 +9,15 @@
   
   
 }
+a{
+    text-decoration: none;
+}
 
 html{
     font-size: 63.5%;
 }
  :root{
+    --btn-color:rgb(242, 235, 235);
     --mainColor-color:#0db907;
     --background-color:#0f0f0f;
 
@@ -26,11 +30,6 @@ body{
 
 /* ?navbar starts */
 
-a{
-
-    color:var(--mainColor-color);
-    text-decoration: none;
-}
 
 .nav-container{
     display: flex;
@@ -48,10 +47,11 @@ a{
 }
 
 .user-png{
-    width: 1.5rem;
+    padding: 2px;
+    width: 2rem;
     margin-right: 1rem;
-
-    
+    border: 2px solid var(--mainColor-color);
+    border-radius:50% ;
 }
 
 
@@ -63,18 +63,13 @@ a{
     text-align: center;
     line-height: 40px;
     cursor: pointer;
-
-    
-
-
 }
 .fa-solid{
-
-    /* border: 2px solid var(--mainColor-color); */
-    /* right: 0px; */
-    font-size: 1.2rem;
+    /*border: 2px solid var(--mainColor-color);
+    *//*right: 0px;
+    */font-size: 1.2rem;
     margin-right: 0.2rem;
-    
+    color: #0db907;
 }
 
 .search-box{
@@ -82,6 +77,11 @@ a{
     width: 23rem;
     height: 1.7rem;
     border-right: 2px solid #0db907;
+    background-color: var(--background-color);
+    color: var(--mainColor-color);
+    outline: none;
+    font-size: 1.3rem;
+    padding-left:5px ;
 }
 
 .search-input{
@@ -103,19 +103,44 @@ a{
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 1.3rem;
+    /* gap: 5px; */
     /* margin-left: 10rem; */
-    font-size: larger;
-    
-
-    
-    
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+   
 }
     
 li a{
-     list-style-type: none;
-     display: inline-block;
+    list-style-type: none;
+    display: inline-block;
     position: relative;
+    text-transform: uppercase;
+     color:var(--mainColor-color);
+    text-decoration: none;
+    
+
+         &::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            bottom: -1px;
+            left: 0;
+            border-bottom: 1px solid var(--mainColor-color);
+            display: inline-block;
+            transition: width .3s linear;
+            -webkit-transition: width .3s linear;
+            -moz-transition: width .3s linear;
+            -ms-transition: width .3s linear;
+            -o-transition: width .3s linear;
+}
+        &:hover::after{
+        width: 100%;
+
+        }
+
+
+
 }
     
     
@@ -123,27 +148,80 @@ li a{
 
 
 .nav-container{
-    padding: 1.5rem;
+    padding: 1rem .2rem;
 }
 
 .home-buttons ul li :not(:first-child){
     margin-left: 2rem;
 }
 
-li a::after{
-            content: "";
-            position: absolute;
-            width: 4rem;
-            
-            bottom: 0;
-            left: 0;
-            border: 3px solid green;
-            display: inline-block;
-}
 
 /*? navbar ends here */
-
+  
 
 /* ?main section starts */
 
+main{
+    display: flex;
+    flex-direction:column ;
+    
 
+}
+
+.bmw-section-01{
+    background-color: black;
+
+}
+
+.grid{
+    display: grid;
+    margin: 0 3rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-right: 1rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.grid-two-coluns{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.explore-btn{
+    display: inline-block;
+    background-color: var(--mainColor-color);
+    width: 8rem;
+    padding: .2rem .3rem;
+    & a{
+        color: var(--btn-color);
+        text-decoration: none;
+    }
+    
+}
+
+.explore-btn a:hover{
+    background-color: #074d05;
+    cursor: pointer;
+}
+
+.bmw-image{
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+.bmw-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    & h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    }
+    & p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
