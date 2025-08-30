@@ -35,7 +35,7 @@ a{
 .nav-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -54,9 +54,6 @@ a{
     
 }
 
-li{
-    list-style-type: none;
-}
 
 
 .search-icon-tag{
@@ -101,7 +98,7 @@ li{
     -o-border-radius: 3px;
 }
 
-.home-buttons ul{
+.home-buttons ul li{
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -111,13 +108,15 @@ li{
     font-size: larger;
     
 
-    &li a{
-        display: inline-block;
-        position: relative;
-    }
+    
     
 }
     
+li a{
+     list-style-type: none;
+     display: inline-block;
+    position: relative;
+}
     
     
 
@@ -131,12 +130,15 @@ li{
     margin-left: 2rem;
 }
 
-.home-buttons ul li a::after{
+li a::after{
             content: "";
             position: absolute;
+            width: 4rem;
+            
             bottom: 0;
             left: 0;
             border: 3px solid green;
+            display: inline-block;
 }
 
 /*? navbar ends here */
