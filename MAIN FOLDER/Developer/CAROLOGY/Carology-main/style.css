@@ -20,12 +20,14 @@ html{
     --btn-color:rgb(242, 235, 235);
     --mainColor-color:#0db907;
     --background-color:#0f0f0f;
+    --background-color:black;
 
  }
 
 body{
     background-color:var(--background-color);
     color:var(--mainColor-color);
+
 }
 
 /* ?navbar starts */
@@ -169,7 +171,8 @@ main{
 }
 
 .bmw-section-01{
-    background-color: black;
+    background-color: var(--background-color);
+    margin-bottom: 4rem;
 
 }
 
@@ -179,11 +182,12 @@ main{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-right: 1rem;
     align-items: center;
-    gap: 2rem;
+    /* gap: 10rem; */
 }
 
 .grid-two-coluns{
     grid-template-columns: repeat(2,1fr);
+
 }
 
 .explore-btn{
@@ -211,7 +215,7 @@ main{
 .bmw-content {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 
     & h1{
     font-size: 2rem;
@@ -224,4 +228,46 @@ main{
         font-size: 1rem;
         line-height: 1.5rem;
     }
+}
+
+/* CARDS SECTION STARTS */
+
+.cards-section-02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 3rem;
+    width: 100%;
+    /* margin-top: 2rem; */
+    /* height: auto; */
+}
+.cars{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 459px;
+    box-shadow: 2px -5px 86px -60px rgba(55,204,70,0.75);
+    background-color:var(--background-color);
+    /* border: .1px solid black; */
+    /* border-radius: 3rem; */
+    
+}
+.cars a{
+    display: flex;
+    justify-content: center;
+    width: 75.3rem;
+    align-items: center;
+    background-color:var(--background-color);
+    /* display: inline-block; */
+    /* position: relative; */
+    & .muscle{
+
+    }
+    
+}
+.car{
+    width: 60%;
+    /* height: 459px; */
+    /* position: absolute; */
 }
