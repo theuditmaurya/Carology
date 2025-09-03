@@ -1,2 +1,0 @@
-# Carology
-website about cars 
